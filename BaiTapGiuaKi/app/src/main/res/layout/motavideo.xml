@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/video"
+        showYouTubeButton="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:autoPlay="false"
+        app:videoId="oeRG9A6bDdY" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Lấy bối cảnh sau hơn một thập kỷ kể từ phần phim đầu tiên, Avatar: Dòng Chảy Của Nước kể về câu chuyện của gia đình Sully (Jake, Neytiri, và con của họ), những vấn đề xung quanh họ, những nỗ lực để bảo vệ sự an toàn của gia đình, những cuộc chiến sinh tồn, và những hiểm họa mà họ phải đối mặt. Được chỉ đạo và sản xuất bởi đạo diễn James Cameron và Jon Landau, bộ phim quy tụ dàn diễn viên nổi tiếng như: Zoe Saldana, Sam Worthington, Sigourney Weaver, Stephen Lang, Cliff Curtis, Joel David Moore, CCH Pounder, Edie Falco, Jemaine Clement, Giovanni Ribisi, và Kate Winslet."
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/back2"
+        style="@android:style/Widget.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/green_btn"
+        android:text="BACK"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
