@@ -2,6 +2,7 @@ package com.example.btgk;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -82,7 +83,7 @@ public class ListFragment extends Fragment {
         dataholder.add(ob6);
         Phim ob7=new Phim("NDTGDYA","Bhop – một kỹ sư \\ntài...Xem chi tiết",R.drawable.ngtgdya);
         dataholder.add(ob7);
-        recyclerView.setAdapter(new PhimAdapter(dataholder));
+        recyclerView.setAdapter(new PhimAdapter(dataholder,getActivity()));
         return view;
     }
 

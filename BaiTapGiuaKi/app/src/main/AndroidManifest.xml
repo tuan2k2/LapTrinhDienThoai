@@ -16,6 +16,10 @@
         <activity
             android:name=".activity_register_app"
             android:exported="false" />
+
+        <activity
+            android:name=".moTaVideo"
+            android:exported="false" />
         <activity
             android:name=".login"
             android:exported="true">

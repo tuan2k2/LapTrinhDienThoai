@@ -1,5 +1,7 @@
 package com.example.btgk;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,9 +15,11 @@ import java.util.ArrayList;
 
 public class PhimAdapter extends RecyclerView.Adapter<PhimAdapter.myviewholder> {
     ArrayList<Phim> dataholder;
+    Context context;
 
-    public PhimAdapter(ArrayList<Phim> dataholder) {
+    public PhimAdapter(ArrayList<Phim> dataholder, Context context) {
         this.dataholder = dataholder;
+        this.context = context;
     }
 
     @NonNull
@@ -26,11 +30,21 @@ public class PhimAdapter extends RecyclerView.Adapter<PhimAdapter.myviewholder> 
     }
 
 
+
     @Override
     public void onBindViewHolder(@NonNull PhimAdapter.myviewholder holder, int position) {
+        final Phim temp = dataholder.get(position);
         holder.img.setImageResource(dataholder.get(position).getImg());
         holder.tenPhim.setText(dataholder.get(position).getTenPhim());
         holder.gthPhim.setText(dataholder.get(position).getGthPhim());
+
+        holder.img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context , moTaVideo.class);
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
