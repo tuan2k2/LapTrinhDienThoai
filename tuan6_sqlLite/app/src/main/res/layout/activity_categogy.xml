@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Categogy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="247dp"
+                    android:layout_height="74dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center_horizontal"
+                    android:text="ASUS"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                   />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="247dp"
+                    android:layout_height="74dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center_horizontal"
+                    android:text="ACER"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                     />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="247dp"
+                    android:layout_height="74dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center_horizontal"
+                    android:text="DELL"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="247dp"
+                    android:layout_height="74dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center_horizontal"
+                    android:text="MACBOOK"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                  />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/purple_200"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:layout_width="247dp"
+                    android:layout_height="74dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginLeft="56dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center_horizontal"
+                    android:text="LENOVO"
+                    android:textAlignment="center"
+                    android:textColor="#ffff"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                     />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
