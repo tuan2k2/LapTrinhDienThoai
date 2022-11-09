@@ -1,6 +1,8 @@
 package com.example.fire_base_317.Dao;
 
-public class SinhVien {
+import java.io.Serializable;
+
+public class SinhVien implements Serializable {
     private String id;
     private String MSV;
     private String TSV;
@@ -8,13 +10,13 @@ public class SinhVien {
     private String Nganh;
     private String Khoa;
 
-    public SinhVien(String id, String MSV, String TSV, String lop, String nganh, String khoa) {
-        this.id = id;
+    public SinhVien(String MSV, String TSV, String Lop, String Nganh, String Khoa) {
         this.MSV = MSV;
         this.TSV = TSV;
-        Lop = lop;
-        Nganh = nganh;
-        Khoa = khoa;
+        this.Lop
+                = Lop;
+        this.Nganh = Nganh;
+        this.Khoa = Khoa;
     }
 
     public SinhVien() {

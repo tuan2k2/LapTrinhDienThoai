@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThemSV_317">
+
+    <TextView
+        android:id="@+id/tv_THEMSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="10dp"
+        android:text="THÊM SINH VIÊN"
+        android:textAlignment="center"
+        android:textColor="@color/purple_200"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/tv_maSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="10dp"
+        android:text="Nhập Mã Sinh Viên :"
+        android:textColor="#fdb501"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdateMSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Mã Sinh Viên" />
+
+    <TextView
+        android:id="@+id/tv_tenSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="10dp"
+        android:text="Nhập Tên Sinh Viên :"
+        android:textColor="#fdb501"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdateTSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="Tên Sinh Viên " />
+
+    <TextView
+        android:id="@+id/TV_Lop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="10dp"
+        android:text="Nhập Lớp Sinh Hoạt:"
+        android:textColor="#fdb501"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdateLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Lớp Sinh Hoạt :"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_Nganh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="10dp"
+        android:text="Nhập Ngành Học:"
+        android:textColor="#fdb501"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdateNganh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Ngành Học :"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tv_Khoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingTop="10dp"
+        android:text="Nhập Tên Khoa :"
+        android:textColor="#fdb501"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextUpdateKhoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Khoa : "
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_update_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/green_btn"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/btn_update_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/green_btn"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btn_update_Add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/green_btn"
+            android:text="Add" />
+    </LinearLayout>
+</LinearLayout>

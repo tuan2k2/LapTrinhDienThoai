@@ -2,6 +2,8 @@ package com.example.fire_base_317.Adapter;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -13,16 +15,23 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.fire_base_317.Dao.*;
 import com.example.fire_base_317.*;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.fire_base_317.Dao.*;
+
+
 public class SinhVienAdapter extends ArrayAdapter<SinhVien> {
 
     private Activity activity;
@@ -64,12 +73,21 @@ public class SinhVienAdapter extends ArrayAdapter<SinhVien> {
                     @Override
                     public boolean onMenuItemClick(MenuItem menuItem) {
                         if (menuItem.getItemId()==R.id.themSV){
-                            Toast.makeText(activity,"Bạn đã nhấn nút thêm",Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(activity,ThemSV_317.class);
+                            activity.startActivity(intent);
                         } else if (menuItem.getItemId()==R.id.suaThongTin){
-                            Toast.makeText(activity,"Bạn đã nhấn nút sửa" + sinhVien.getTSV(),Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(activity,UpdateSV.class);
+                             intent.putExtra("SINHVIEN", sinhVien);
+                            activity.startActivity(intent);
                         } else if (menuItem.getItemId()==R.id.Xoa){
-                            Toast.makeText(activity,"Bạn đã nhấn nút xoa" + sinhVien.getTSV(),Toast.LENGTH_LONG).show();
-
+                            FirebaseDatabase database = FirebaseDatabase.getInstance();
+                            DatabaseReference myRef = database.getReference("QuanLySinhVien/SinhVien");
+                            myRef.child(sinhVien.getId()).removeValue(new DatabaseReference.CompletionListener() {
+                                @Override
+                                public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
+                                    Toast.makeText(activity, "Delete Success "  ,Toast.LENGTH_SHORT).show();
+                                }
+                            });
                         }
                         return false;
                     }
@@ -77,7 +95,7 @@ public class SinhVienAdapter extends ArrayAdapter<SinhVien> {
                 popupMenu.getMenuInflater().inflate(R.menu.my_menu,popupMenu.getMenu());
 
                 try {
-                    Field field = popupMenu.getMenu().getClass().getDeclaredField("mPopup");
+                    Field field = popupMenu.getClass().getDeclaredField("mPopup");
                     field.setAccessible(true);
                     Object popupMenuHelper = field.get(popupMenu);
                     Class<?> cls = Class.forName("com.android.internal.view.menu.menuPopupHelper");

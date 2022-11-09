@@ -12,7 +12,9 @@
         <entry key="..\:/Nam_3/fire_base/app/src/main/res/layout/activity_list_view_sinh_vien317.xml" value="0.20833333333333334" />
         <entry key="..\:/Nam_3/fire_base/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
         <entry key="..\:/Nam_3/fire_base/app/src/main/res/layout/activity_signup317.xml" value="0.25416666666666665" />
+        <entry key="..\:/Nam_3/fire_base/app/src/main/res/layout/activity_them_sv317.xml" value="0.10400000000000001" />
         <entry key="..\:/Nam_3/fire_base/app/src/main/res/layout/activity_update.xml" value="0.24320652173913043" />
+        <entry key="..\:/Nam_3/fire_base/app/src/main/res/layout/activity_update_sv.xml" value="0.16486486486486487" />
         <entry key="..\:/Nam_3/fire_base/app/src/main/res/layout/listview_sinhvien_317.xml" value="0.1" />
         <entry key="..\:/Nam_3/fire_base/app/src/main/res/menu/my_menu.xml" value="0.25416666666666665" />
       </map>
@@ -23,5 +25,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.15846994535519127" />
+      </ProjectState>
+    </option>
   </component>
 </project>
