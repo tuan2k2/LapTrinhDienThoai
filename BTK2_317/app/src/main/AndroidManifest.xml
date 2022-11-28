@@ -14,6 +14,12 @@
         android:theme="@style/Theme.BTK2_317"
         tools:targetApi="31">
         <activity
+            android:name=".AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".fishChiTiet"
+            android:exported="false" />
+        <activity
             android:name=".List_fish"
             android:exported="false" />
         <activity

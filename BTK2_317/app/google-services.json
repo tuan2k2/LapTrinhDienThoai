@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "267685382906",
+    "firebase_url": "https://quanlyca-317-default-rtdb.firebaseio.com",
     "project_id": "quanlyca-317",
     "storage_bucket": "quanlyca-317.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:267685382906:android:40f953c1adb90f85c7d743",
+        "mobilesdk_app_id": "1:267685382906:android:f2bc9eb90cabff7dc7d743",
         "android_client_info": {
           "package_name": "com.example.btk2_317"
         }
