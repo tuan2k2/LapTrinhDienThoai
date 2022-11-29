@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailPhepTinh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/detail_img"
+            android:layout_width="180dp"
+            android:layout_height="117dp"
+            app:srcCompat="@drawable/vietnam" />
+
+        <TextView
+            android:id="@+id/phepTinhD"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
+            android:layout_weight="1"
+            android:text="VIỆT NAM"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Bạn hãy nói gì về đất nước mình đi nào ?"
+        android:textColor="#f53453ff"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/nhapX"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:textColor="@color/purple_700" />
+
+    <Button
+        android:id="@+id/btnKetQua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded"
+        android:gravity="center"
+        android:text="Lưu"
+        android:textAllCaps="false"
+        android:textSize="21dp" />
+
+    <TextView
+        android:id="@+id/kqTraVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Xin Chào Việt Nam "
+        android:textAlignment="center"
+        android:textColor="#f53453ff"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/x5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Lịch Sử"
+        android:textAlignment="center"
+        android:textColor="#f53453ff"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

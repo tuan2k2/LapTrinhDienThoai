@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name" translatable="false">BKT3_317</string>
+
+    <string-array name="phepTinh">
+        <item>VIỆT NAM</item>
+        <item>PHÁP</item>
+        <item>NGA</item>
+        <item>ANH</item>
+        <item>BỒ ĐÀO NHA</item>
+        <item>BRAZIL</item>
+        <item>TÂY BAN NHA</item>
+    </string-array>
+</resources>
